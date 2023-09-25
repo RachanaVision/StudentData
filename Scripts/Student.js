@@ -40,6 +40,7 @@ function EditRecord(id) {
 }
 
 function DeleteRecord(id) {
+
     var token = sessionStorage.getItem('Token');
 
     var authHeaders = {
