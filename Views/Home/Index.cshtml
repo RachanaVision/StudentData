@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<p>&nbsp;</p>
+<form id="loginform" method="post">
+    <table>
+        <tr>
+            <td>
+                <label>Username: </label>
+            </td>
+            <td>
+                <input type="text" id="username" name="username" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Passsword: </label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="button" value="LOGIN" id="btnlogin" onclick="login()" class="btn btn-success" />
+            </td>
+        </tr>
+    </table>
+    <label id="lab"></label>
+</form>
+<script src="~/Scripts/Student.js"></script>

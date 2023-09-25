@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "AddRecord";
+}
+
+<p>&nbsp;</p>
+<form id="loginform" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="hidden" id="id" name="id" />
+                <label>Firstname: </label>
+            </td>
+            <td>
+                <input type="text" id="fname" name="fname" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Lastname: </label>
+            </td>
+            <td>
+                <input type="text" id="lname" name="lname" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Date of Birth: </label>
+            </td>
+            <td>
+                <input type="date" id="dob" name="dob" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender: </label>
+            </td>
+            <td>
+                <input type="radio" class="radio-inline" id="Male" value="Male" name="gender" /> Male
+                <input type="radio" class="radio-inline" id="Female" value="Female" name="gender" /> Female
+                <input type="hidden" id="gender" name="gender" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Standard: </label>
+            </td>
+            <td>
+                <input type="text" id="standard" name="standard" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Username: </label>
+            </td>
+            <td>
+                <input type="text" id="username" name="username" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Password: </label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" class="form-control" style="width:200px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Role: </label>
+            </td>
+            <td>
+                <select class="form-control" name="role" id="role">
+                    <option value="Student">Student</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="button" value="SUBMIT" id="btnsubmit" onclick="SubmitRecord()" class="btn btn-success" />
+                <input type="button" value="CANCEL" onclick="cancelclick()" class="btn btn-default btn-danger" />
+            </td>
+        </tr>
+    </table>
+    <label id="lab"></label>
+</form>
+
+<script>
+    $(document).ready(function () {
+        getData();
+    })
+</script>
+
+<script src="~/Scripts/Student.js"></script>
