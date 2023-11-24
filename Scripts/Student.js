@@ -87,7 +87,7 @@ function DataBind() {
                         "<td>" + emplist[i].lname + "</td>" +
                         "<td>" + emplist[i].dob + "</td>" +
                         "<td>" + emplist[i].gender + "</td>" +
-                        "<td>" + emplist[i].standard + "</td>" +
+                        "<td>" + emplist[i].email + "</td>" +
                         "<td>" + emplist[i].username + "</td>" +
                         "<td>" + emplist[i].password + "</td>" +
                         "<td>" + emplist[i].role + "</td>" +
@@ -126,7 +126,7 @@ function SubmitRecord() {
         lname: $('#lname').val(),
         dob: $('#dob').val(),
         gender: $('#gender').val(),
-        standard: $('#standard').val(),
+        email: $('#email').val(),
         username: $('#username').val(),
         password: $('#password').val(),
         role: $('#role').val()
@@ -199,7 +199,7 @@ function getData() {
                 else {
                     $('#Female').prop("checked", true);
                 }
-                $('#standard').val(response.standard);
+                $('#email').val(response.email);
                 $('#username').val(response.username);
                 $('#password').val(response.password);
                 $('#role').val(response.role);
